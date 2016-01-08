@@ -1,45 +1,49 @@
 
 public class Employee {
 	
-	int id;
-	String name;
-	int age;
-	float salary;
-	
-	public Employee() {
+	int ID;
+	String NAME;
+	int AGE;
+	float SALARY;
+
+	public Employee(int iD, String nAME, int aGE, float sALARY) {
 		super();
+		ID = iD;
+		NAME = nAME;
+		AGE = aGE;
+		SALARY = sALARY;
 	}
 
-	public Employee(int id, String name, int age, float salary) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.age = age;
-		this.salary = salary;
+	public int getID() {
+		return ID;
 	}
 
-	public int getId() {
-		return id;
+	public void setID(int iD) {
+		ID = iD;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public String getNAME() {
+		return NAME;
 	}
 
-	public String getName() {
-		return name;
+	public void setNAME(String nAME) {
+		NAME = nAME;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public int getAGE() {
+		return AGE;
 	}
 
-	public float getSalary() {
-		return salary;
+	public void setAGE(int aGE) {
+		AGE = aGE;
 	}
 
-	public void setSalary(float salary) {
-		this.salary = salary;
+	public float getSALARY() {
+		return SALARY;
+	}
+
+	public void setSALARY(float sALARY) {
+		SALARY = sALARY;
 	}
 	
 }
