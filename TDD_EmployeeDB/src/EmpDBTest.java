@@ -275,14 +275,16 @@ public class EmpDBTest {
 		db.create(new Employee(2,"Pankti Raval",25,50000));
 		db.create(new Employee(3,"Bhoomi Shah",21,30000));
 		
-		Collection<Employee> r1 = (Collection<Employee>)db.read(ColumnNames.AGE, 21);
-		Collection<Employee> r = (Collection<Employee>)(new EmpDB((LinkedHashSet<Employee>)r1)).read(ColumnNames.ID, 1);
+		Collection<Employee> r = (Collection<Employee>)db.read(new Employee(1,null,21,-1));
 		
 		EmpDB temp = new EmpDB((LinkedHashSet<Employee>)r);
 		temp.update(ColumnNames.AGE,21,new Employee(-1,null,-1,55000));
 		
-		db.empDB.remove(r);
-		db.create(temp.empDB);
+		for(Employee e : r) {
+			db.delete(e);
+		}
+		
+		db.create(temp.readAll());
 		
 		assertTrue(db.read(ColumnNames.SALARY,55000).size() == 1);
 	}
@@ -326,17 +328,15 @@ public class EmpDBTest {
 		assertTrue(temp.isEmpty());
 	}
 	
-/*	@Test
+	@Test
 	public void testdeleteMultipleConditions() {
 		db.create(emp);
 		db.create(new Employee(2,"Pankti Raval",25,50000));
 		db.create(new Employee(3,"Bhoomi Shah",21,30000));
 		
-		Collection<Employee> r1 = (Collection<Employee>)db.read(ColumnNames.AGE, 21);
-		Collection<Employee> r = (Collection<Employee>)(new EmpDB((LinkedHashSet<Employee>)r1)).read(ColumnNames.ID, 1);
-		
-		int dbSize = db.empDB.size();
-		db.empDB.remove(r);
-	}*/
+		Employee temp = new Employee(1,null,21,-1);
+		db.delete(temp);
+		assertTrue(db.read(temp).isEmpty());
+	}
 	
 }

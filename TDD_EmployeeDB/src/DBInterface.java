@@ -19,7 +19,7 @@ public interface DBInterface {
 		void delete(ColumnNames col,int value);
 		void delete(ColumnNames col,String value);
 		void delete(ColumnNames col,Float value);
-		
+		void delete(Employee emp);		
 		void deleteAll();
 
 }

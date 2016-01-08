@@ -57,7 +57,7 @@ public class EmpDB implements DBInterface{
 			while(itr.hasNext()) {
 				Employee e = itr.next();
 				if(emp.getID() == e.getID()) {
-					empDB.remove(e);
+					System.out.println("Primary Key Conflict with id : " + emp.getID());
 				}
 			}
 			
@@ -397,6 +397,23 @@ public class EmpDB implements DBInterface{
 			break;
 		}
 		
+	}
+
+	@Override
+	public void delete(Employee emp) {
+		Iterator<Employee> itr = empDB.iterator();
+		while(itr.hasNext()) {
+			Employee t = itr.next();
+			if( emp.getID() == -1 || emp.getID() == t.getID()) {
+				if(emp.getNAME() == null || emp.getNAME().equals(t.getNAME())) {
+					if(emp.getAGE() == -1 || emp.getAGE() == t.getAGE()) {
+						if(emp.getSALARY() == -1 || emp.getSALARY() == t.getSALARY()) {
+							itr.remove();
+						}
+					}
+				}
+			}
+		}
 	}
 
 	@SuppressWarnings("rawtypes")
