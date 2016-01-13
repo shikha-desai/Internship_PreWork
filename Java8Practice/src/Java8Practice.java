@@ -66,6 +66,13 @@ public class Java8Practice {
 	    
 	    Map<Integer,Map<String,List<Person>>> bimap = new HashMap<Integer,Map<String,List<Person>>>();
 	    
+	    try {
+			Thread.sleep(60000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    
 	    persons.forEach(
 	    		person ->
 	    		bimap.computeIfAbsent(person.getAge(), HashMap::new)
