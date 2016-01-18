@@ -1,0 +1,28 @@
+import java.util.Collection;
+import java.util.HashSet;
+
+public class CollectionsPractice {
+
+	public static void main(String[] args) {
+		
+		Person p = new Person("Pankti",25);
+		
+		Collection<Person> hs = new HashSet<Person>();
+		hs.add(new Person("Shikha",21));
+		hs.add(new Person("Pankti",25));
+		
+		System.out.println("----------HashSet---------");
+		System.out.println(hs);
+		
+		hs.add(new Person("Shikha",21));
+		
+		System.out.println("----------HashSet---------");
+		System.out.println(hs);
+		
+		
+
+	}
+
+
+
+}

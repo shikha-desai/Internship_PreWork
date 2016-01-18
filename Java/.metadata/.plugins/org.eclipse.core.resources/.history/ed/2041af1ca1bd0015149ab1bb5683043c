@@ -1,0 +1,11 @@
+import java.util.HashSet;
+
+public class CollectionsPractice {
+
+	public static void main(String[] args) {
+		
+		HashSet hs = new HashSet();
+
+	}
+
+}
