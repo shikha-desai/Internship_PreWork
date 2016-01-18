@@ -32,12 +32,13 @@ public class Person {
 		this.age = age;
 	}
 	
-	/*@Override
+	@Override
 	public int hashCode() {
 
+		//return this.age; // to test the condition of same hash and not equals
 		return this.myhash;
 		
-	}*/
+	}
 	@Override
 	public boolean equals(Object obj) {
 	
@@ -58,7 +59,7 @@ public class Person {
 	@Override
 	public String toString() {
 		
-		return "Person : " + this.name + ", " + this.age + "\n";
+		return "Person : " + this.name + "-" + this.age;
 	}
 	
 	
