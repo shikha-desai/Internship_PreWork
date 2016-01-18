@@ -1,0 +1,40 @@
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+
+public class CollectionsPractice {
+
+	public static void main(String[] args) {
+		
+		Person p = new Person("Pankti",25);
+		
+		Collection<Person> hs = new HashSet<Person>();
+		hs.add(new Person("Shikha",21));
+		hs.add(p);
+		
+		System.out.println("----------HashSet---------");
+		System.out.println(hs);
+		
+		hs.add(new Person("Shikha",21));
+		
+		System.out.println("----------HashSet after adding !hash and equals---------");
+		System.out.println(hs);
+		
+		hs.add(p);
+		
+		System.out.println("----------HashSet after adding hash and equals---------");
+		System.out.println(hs);
+		
+		System.out.println("Conclusion for HashSet : It just checks hash, \n "
+				+ "1. hash same : duplicate \n"
+				+ " 2. hash different : not duplicate");
+		
+		HashMap<Person,Integer> hm = new HashMap<Person,Integer>();
+		hm.put(new Person("Shikha",21), 1);
+		hm.put(p, 2);
+
+	}
+
+
+
+}
