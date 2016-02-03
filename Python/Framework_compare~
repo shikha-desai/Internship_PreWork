@@ -1,0 +1,24 @@
+Development philosophies
+Response Time
+
+
+
+Django
+Flask
+Pyramid
+Bottle
+W
+
+Issues for django:
+
+    Regular expressions are overkill for URL routing.
+    There are too many ways to render templates (render, render_to_response, HttpResponse, ...) all of them with a set of drawbacks.
+    URL reversal is a mess especially in templates, like nobody thought of the interface, just the implementation. Why the explicit args here reverse('name', args=[])?
+    Why no top level models.py. "Everything is an app" forces premature optimization for most (all?) projects.
+    request.json would be nice ... requests and Flask both have it.
+    While we’re at it, jsonify() for application/json responses.
+    WSGI as an Application objects is so much better than this magic bootstrappin DJANGO_SETTINGS_MODULE and URL_CONFIG stuff.
+
+Django  vs Flask:
+Flask excels for small projects and Django excels at large projects and has advantages that are broader than just the act of development, e.g. fungibility of developers, quality assurance of using an opinionated framework (lower quality devs can't do as much wrong with django as they can with flask).
+Flask -> requirements.txt large due to many plugins
