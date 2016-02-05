@@ -5,5 +5,13 @@
       <secret-storage>master_key</secret-storage>
       <auth-required>false</auth-required>
     </data-source>
+    <data-source name="Django default" uuid="89df5cf0-68b3-40b7-baff-c2945cbc4290">
+      <auth-required>false</auth-required>
+    </data-source>
+    <data-source name="Django default" uuid="1e90f8f8-1b02-4a3a-8990-3e515b80fa6a" />
+    <data-source name="Sqlite (Xerial) - db.sqlite3 [2]" uuid="caf082aa-2b0f-4a66-aa59-c36e84a1562e">
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+    </data-source>
   </component>
 </project>
