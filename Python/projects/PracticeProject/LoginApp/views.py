@@ -1,4 +1,5 @@
 from django.contrib.auth.models import User, Group
+from django.contrib.sites.models import Site
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from django.shortcuts import get_object_or_404
@@ -7,6 +8,7 @@ from .serializers import UserSerializer, GroupSerializer
 from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework.views import APIView
 import requests
+import logging
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -28,5 +30,8 @@ class GroupViewSet(viewsets.ModelViewSet):
 class Signup(APIView):
 
     def post(self, request):
-        requests.put("http://localhost:8000/users/", auth=('admin', 'password@admin'), data=request.data)
+        logger = logging.getLogger(__name__)
+        logger.info("entered post view")
+        requests.put(Site.objects.get_current().name + '/users/', auth=('admin', 'password@admin'), data=request.data)
+        logger.info("post request done")
         return HttpResponseRedirect(reverse('LoginApp:signup'))

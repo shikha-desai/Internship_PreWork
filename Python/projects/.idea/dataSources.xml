@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="4162585269">
+  <component name="DataSourceManagerImpl" format="xml" hash="4290311831">
     <data-source source="LOCAL" name="Sqlite (Xerial) - db.sqlite3" uuid="8d56339b-31f8-4a9d-8674-722f9b09db18">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
@@ -13,7 +13,7 @@
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/PracticeProject/PracticeProject/settings.py</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/mysite/db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/PracticeProject/db.sqlite3</jdbc-url>
       <explain-plan-config>
         <provider>com.intellij.database.plan.ExplainPlanProvider.NullExplainPlanProvider</provider>
       </explain-plan-config>
@@ -39,6 +39,7 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/PracticeProject/db.sqlite3</jdbc-url>
+      <default-dialect>MySQL</default-dialect>
     </data-source>
   </component>
 </project>

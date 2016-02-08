@@ -1,7 +1,7 @@
 
 <h1>Sign Up Page</h1>
 
-<form action="{% url 'LoginApp:signupSubmit' %}" method="post">
+<form action="{% url 'LoginApp:signupSubmit' %}" method="post" name="signupForm" id="signupForm">
 {% csrf_token %}
 	<input type="text" name="username" id="username" placeholder="Enter username"/>
 	<input type="email" name="email" id="email" placeholder="Enter valid email address"/>
