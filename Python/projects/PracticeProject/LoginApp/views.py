@@ -28,5 +28,5 @@ class GroupViewSet(viewsets.ModelViewSet):
 class Signup(APIView):
 
     def post(self, request):
-        requests.post("http://localhost:8000/users/", auth=('admin', 'password@admin'), data=request.data)
+        requests.put("http://localhost:8000/users/", auth=('admin', 'password@admin'), data=request.data)
         return HttpResponseRedirect(reverse('LoginApp:signup'))
