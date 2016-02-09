@@ -896,7 +896,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455026610624</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="workspace commit">
+      <created>1455026632467</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1455026632467</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -990,7 +996,8 @@
     <MESSAGE value="Used selenium to test the signup form redirection to signupsubmit on submitting" />
     <MESSAGE value="Completed logina and logout module and resolved errors in testing the rest apis" />
     <MESSAGE value="Completed login and logout and also tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed login and logout and also tests" />
+    <MESSAGE value="workspace commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
