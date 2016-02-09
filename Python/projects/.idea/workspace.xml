@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50ea5ef8-1856-4704-89ac-95336d89c8a1" name="Default" comment="Used selenium to test the signup form redirection to signupsubmit on submitting">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeProject/LoginApp/templates/LoginApp/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeProject/LoginApp/templates/LoginApp/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeProject/debug.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeProject/db.sqlite3" afterPath="$PROJECT_DIR$/PracticeProject/db.sqlite3" />
+    <list default="true" id="50ea5ef8-1856-4704-89ac-95336d89c8a1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeProject/LoginApp/serializers.py" afterPath="$PROJECT_DIR$/PracticeProject/LoginApp/serializers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeProject/LoginApp/templates/LoginApp/login.html" afterPath="$PROJECT_DIR$/PracticeProject/LoginApp/templates/LoginApp/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeProject/LoginApp/tests.py" afterPath="$PROJECT_DIR$/PracticeProject/LoginApp/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeProject/LoginApp/urls.py" afterPath="$PROJECT_DIR$/PracticeProject/LoginApp/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeProject/LoginApp/views.py" afterPath="$PROJECT_DIR$/PracticeProject/LoginApp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeProject/PracticeProject/settings.py" afterPath="$PROJECT_DIR$/PracticeProject/PracticeProject/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeProject/PracticeProject/tests.py" afterPath="$PROJECT_DIR$/PracticeProject/PracticeProject/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeProject/PracticeProject/urls.py" afterPath="$PROJECT_DIR$/PracticeProject/PracticeProject/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django-polls/polls/admin.py" afterPath="$PROJECT_DIR$/django-polls/polls/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django-polls/polls/urls.py" afterPath="$PROJECT_DIR$/django-polls/polls/urls.py" />
     </list>
     <ignored path="projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -907,7 +890,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455026567148</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Completed login and logout and also tests">
+      <created>1455026610624</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1455026610624</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1000,7 +989,8 @@
     <MESSAGE value="Completed User Rest api  tests" />
     <MESSAGE value="Used selenium to test the signup form redirection to signupsubmit on submitting" />
     <MESSAGE value="Completed logina and logout module and resolved errors in testing the rest apis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed logina and logout module and resolved errors in testing the rest apis" />
+    <MESSAGE value="Completed login and logout and also tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed login and logout and also tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
