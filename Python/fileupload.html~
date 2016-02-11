@@ -1,0 +1,5 @@
+<html>
+	<form id="myform">
+		File: <input type="file"/>	
+	</form>
+</html>

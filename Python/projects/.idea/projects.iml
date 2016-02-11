@@ -16,6 +16,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="mysite" />
     <orderEntry type="module" module-name="PracticeProject" />
+    <orderEntry type="module" module-name="newApp" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

@@ -117,3 +117,16 @@ Login successful
 1
 Login successful
 13
+entered post view
+localhost:8000
+LoginApp
+201
+post request done
+Login successful
+1
+http://localhost:8081/LoginApp/signup/
+entered post view
+localhost:8081
+LoginApp
+400
+post request not successful
